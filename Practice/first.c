@@ -1,12 +1,9 @@
 #include <stdio.h>
 
-
 int main() {
 
-    char names[30];
-    printf("Please Enter your Name : ");
-    scanf("%s",&names);
-    printf("Welcome %s to KG Coding",names);
+    int a = 10, b = 20;
+    printf("%d %d",a,b);
 
     return 0;
 }
