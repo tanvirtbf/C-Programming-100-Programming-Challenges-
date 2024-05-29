@@ -1,9 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    int age;
-    printf("Enter your age : \n");
-    scanf("%d",&age);
-    printf("Your age is %d",age);
+    printf("*\n*\t*\n*\t*\t*\n*\t*\t*\t*\n*\t*\t*\t*\t*\n");
     return 0;
 }
