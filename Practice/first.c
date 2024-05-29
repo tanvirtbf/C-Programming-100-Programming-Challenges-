@@ -1,6 +1,12 @@
 #include <stdio.h>
 
+
 int main() {
-    printf("*\n*\t*\n*\t*\t*\n*\t*\t*\t*\n*\t*\t*\t*\t*\n");
+
+    char names[30];
+    printf("Please Enter your Name : ");
+    scanf("%s",&names);
+    printf("Welcome %s to KG Coding",names);
+
     return 0;
 }
