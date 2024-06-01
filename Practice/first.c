@@ -9,5 +9,6 @@ int main() {
     char a,b;
     printf("please enter a and b");
     scanf("%c%c",&a,&b);
+    printf("%c%c",a,b);
     return 0;
 }
