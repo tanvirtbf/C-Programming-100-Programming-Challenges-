@@ -6,5 +6,6 @@ int main() {
     printf("please enter your two number ");
     scanf("%d %d",&a,&b);
     printf("%d %d ",a,b);
+    char a,b;
     return 0;
 }
