@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("My age is %d",23);
+    printf("%d is my age",25);
     return 0;
 }
