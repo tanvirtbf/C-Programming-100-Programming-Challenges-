@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    printf("Tanvir\nAhmed"); // Tanvir --next line-- Ahmed
-    printf("Tanvir\tAhmed"); // Tanvir  Ahmed
-    printf("Tanvir\b\bAhmedk\n"); // TanvAhmed
-    printf("Tanvir \"Ahmed\" Mustak");
+    int age;
+    printf("Enter your age : \n");
+    scanf("%d",&age);
+    printf("Your age is %d",age);
     return 0;
 }
