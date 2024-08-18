@@ -1,15 +1,15 @@
 #include <stdio.h>
-// Create a program that takes two numbers and shows result of all arithmetic operators(+,-,*,/,%)
+// Create a program that determines if a number is odd or even
 
 int main(){
-    int a,b;
-    printf("Enter Two number : ");
-    scanf("%d%d",&a,&b);
-    printf("%d + %d = %d\n", a, b, (a+b));
-    printf("%d - %d = %d\n", a, b, (a-b));
-    printf("%d * %d = %d\n", a, b, (a*b));
-    printf("%d / %d = %d\n", a, b, (a/b));
-    printf("%d mod %d = %d\n", a, b, (a%b));
+    int num;
+    printf("Enter a Number : ");
+    scanf("%d",&num);
+    if(num%2==0){
+        printf("%d is even number\n",num);
+    }else if(num%2 != 0){
+        printf("%d is odd number\n",num);
+    }
 
     return 0;
 }
