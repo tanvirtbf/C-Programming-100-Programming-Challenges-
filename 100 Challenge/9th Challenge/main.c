@@ -5,11 +5,11 @@ int main(){
     int a,b;
     printf("Enter Two number : ");
     scanf("%d%d",&a,&b);
-    printf("Addition Value is : %d\n", a+b);
-    printf("Subtraction Value is : %d\n", a-b);
-    printf("Multiplication Value is : %d\n", a*b);
-    printf("Division Value is : %d\n",a/b);
-    printf("Modulas Value is : %d\n", a%b);
+    printf("%d + %d = %d\n", a, b, (a+b));
+    printf("%d - %d = %d\n", a, b, (a-b));
+    printf("%d * %d = %d\n", a, b, (a*b));
+    printf("%d / %d = %d\n", a, b, (a/b));
+    printf("%d mod %d = %d\n", a, b, (a%b));
 
     return 0;
 }
