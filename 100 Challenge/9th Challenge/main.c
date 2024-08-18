@@ -10,5 +10,6 @@ int main(){
     printf("Multiplication Value is : %d\n", a*b);
     printf("Division Value is : %d\n",a/b);
     printf("Modulas Value is : %d\n", a%b);
+
     return 0;
 }
