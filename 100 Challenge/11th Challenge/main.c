@@ -1,15 +1,11 @@
 #include <stdio.h>
-// Create a program that takes two numbers and shows result of all arithmetic operators(+,-,*,/,%)
+// Create a program that shows two float numbers multiplication result
 
 int main(){
-    int a,b;
-    printf("Enter Two number : ");
-    scanf("%d%d",&a,&b);
-    printf("%d + %d = %d\n", a, b, (a+b));
-    printf("%d - %d = %d\n", a, b, (a-b));
-    printf("%d * %d = %d\n", a, b, (a*b));
-    printf("%d / %d = %d\n", a, b, (a/b));
-    printf("%d mod %d = %d\n", a, b, (a%b));
+    float float1,float2;
+    printf("Enter two float number : \n");
+    scanf("%f%f",&float1,&float2);
+    printf("%f * %f = %f", float1, float2, (float1*float2));
 
     return 0;
 }

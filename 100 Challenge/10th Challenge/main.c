@@ -7,6 +7,7 @@ int main(){
     scanf("%d",&num);
     float floating = num;
     printf("%d is convert into float number : %f", num, floating);
+    // second technic
     printf("%d is convert into float number : %f", num, (float)floating);
 
     return 0;
