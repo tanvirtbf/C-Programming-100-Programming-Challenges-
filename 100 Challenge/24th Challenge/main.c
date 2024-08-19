@@ -1,16 +1,13 @@
 #include <stdio.h>
-// Create a program to check whether a given number is prime using while.
+// Create a program that calculates the factorial of a given number.
 
 int main(){
-    int x;
-    printf("Enter a Number for check if Prime or not : ");
+    int x , fact=1;
+    printf("Enter a Number : ");
     scanf("%d",&x);
-    for(int i = 2; i<x; i++){
-        if(x%i==0){
-            printf("%d is not a prime number\n",x);
-            return 0;
-        }
+    for(int i=1;i<=x; i++){
+        fact = fact * i;
     }
-    printf("%d is a Prime Number \n",x);
+    printf("%d",fact);
     return 0;
 }
