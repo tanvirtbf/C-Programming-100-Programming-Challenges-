@@ -4,11 +4,15 @@
 
 void countTo100(); // function prototype
 int sum(int,int); // function prototype
+void subtraction(int,int); // function prototype
+int subtract;
 
 int main() {
     countTo100(); // function call or invoked
     int sumResult = sum(10,20); // function call or invoke
     printf("%d",sumResult);
+    subtraction(20,10);
+    printf("%d",subtract);
     return 0;
 }
 
@@ -20,4 +24,7 @@ void countTo100(){
 }
 int sum(int x, int y){
     return x+y;
+}
+void subtraction(int x, int y){
+    subtract = x - y;
 }
