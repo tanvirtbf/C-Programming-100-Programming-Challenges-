@@ -1,16 +1,16 @@
 #include <stdio.h>
-// Create a program to check whether a given number is prime using while.
+// Create a program that computes the sum of digits of an integer
 
 int main(){
     int x;
-    printf("Enter a Number for check if Prime or not : ");
+    printf("Enter a Number : ");
     scanf("%d",&x);
-    for(int i = 2; i<x; i++){
-        if(x%i==0){
-            printf("%d is not a prime number\n",x);
-            return 0;
-        }
+    int a = x;
+    int result = 0;
+    while(a>0){
+        result += a%10;
+        a = a/10;
     }
-    printf("%d is a Prime Number \n",x);
+    printf("%d",result);
     return 0;
 }
