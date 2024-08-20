@@ -1,6 +1,6 @@
 #include <stdio.h>
 // Create a program to find the Least Common Multiple(LCM) of two numbers
-
+// LCM mane holo 2 ta variable diye amon ekta number er vag jay jetar kono vagsesh nai and sei number onk gula houyar poreo minimum number tai LCM
 int main(){
     int x,y;
     printf("Enter two Numbers : \n");
@@ -12,5 +12,5 @@ int main(){
             return 0;
         }
     }
-
+    return 0;
 }
