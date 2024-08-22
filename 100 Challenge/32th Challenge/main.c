@@ -1,5 +1,6 @@
 #include <stdio.h>
 // Create a program to verify if a number is palindrom
+
 int main(){
     int num, x=0;
     printf("Enter a Number : ");
