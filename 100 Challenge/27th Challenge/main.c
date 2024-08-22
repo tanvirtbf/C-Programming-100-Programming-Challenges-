@@ -1,6 +1,7 @@
 #include <stdio.h>
 // Create a program to find the Greatest Common Divisor(GCD) of two integers.
-// GCD holo 2 ta number kei
+// GCD holo input theke pauya 2 ta number keii divide korte pare and seta sobcheye boro number taii answer hobe
+
 
 int main(){
     int x,y;
