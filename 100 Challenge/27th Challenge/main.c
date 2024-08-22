@@ -5,15 +5,14 @@
 
 int main(){
     int x,y;
-    printf("Enter two Number ");
+    printf("Enter two number : \n");
     scanf("%d%d",&x,&y);
-    int min = x<y?x:y;
-    for(int i = min; i<x; i++){
-        if(x%i==0){
-            printf("%d is not a prime number\n",x);
-            return 0;
+    int min = x<y? x : y;
+    for(int i = min; i>=1; i--){
+        if(x%i==0 && y%i==0){
+            printf("%d is GCD Number",i);
+            break;
         }
     }
-    printf("%d is a Prime Number \n",x);
     return 0;
 }
