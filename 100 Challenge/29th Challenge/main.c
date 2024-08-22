@@ -1,16 +1,12 @@
 #include <stdio.h>
-// Create a program to check whether a given number is prime using while.
+// Create a program to print the Fibonacci series up to a certain number
 
 int main(){
-    int x;
-    printf("Enter a Number for check if Prime or not : ");
+    int x, result=0;
+    printf("Enter a Number : ");
     scanf("%d",&x);
-    for(int i = 2; i<x; i++){
-        if(x%i==0){
-            printf("%d is not a prime number\n",x);
-            return 0;
-        }
+    while(result<x){
+
     }
-    printf("%d is a Prime Number \n",x);
     return 0;
 }
