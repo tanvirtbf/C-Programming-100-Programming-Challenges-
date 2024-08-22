@@ -1,10 +1,20 @@
 #include <stdio.h>
-// Create a program to calculate the absolute value of a given integer using ternary operator
+// Create a program to check if a number is an Armstrong number
 int main(){
-    int num;
+    int num, add=0, result = 0, temp;
     printf("Enter a Number : ");
     scanf("%d",&num);
-    int absNum = -(num);
-    num<0 ? printf("%d absolute number is : %d", num, absNum) : printf("%d is already a absolute number",num);
+    temp = num;
+    while(temp>0){
+       add = temp%10;
+       result += add*add*add;
+       temp = temp / 10;
+    }
+    if(result==num){
+        printf("%d is an Armstrong Number \n", num);
+    }else{
+        printf("%d is not an Armstrong Number \n", num);
+    }
+    printf("%d",result);
     return 0;
 }
