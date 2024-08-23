@@ -1,6 +1,7 @@
 #include <stdio.h>
 // Create a program using continue to print only even numbers using continue for odd numbers
 
+
 int main(){
     int num, sum = 0;
     do{
