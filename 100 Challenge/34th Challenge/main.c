@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Create a program to verify if a user put a positive number
+// Create a program that calculates the sum of all numbers entered by user untill the user enters 0; The total sum should then be displayed.
 
 int main(){
     int num,sum = 0;
