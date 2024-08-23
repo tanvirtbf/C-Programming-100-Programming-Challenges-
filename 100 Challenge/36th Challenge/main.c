@@ -1,19 +1,19 @@
 #include <stdio.h>
-// Create a program to verify if a user put a positive number
+// Create a program using continue to sum all positive numbers entered by the user; skip any negative numbers and out for enter 0.
 
 int main(){
-    int x = 0;
-    do{
-        int num ;
-        x==0? printf("Enter a Number : \n"): printf("Please Enter a Positive Number : \n");
-        scanf("%d",&num);
-        if(num<0){
-            x = 1;
-        }else{
-            printf("Thanks for putting a Positive Number \n");
-            return 0;
-        }
-    }while(x==1);
-
+    int num , sum=0;
+    again:
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    if(num>0){
+        sum += num;
+        goto again;
+    }else if(num<0){
+        goto again;
+    }else if(num==0){
+        printf("%d",sum);
+        return 0;
+    }
     return 0;
 }
