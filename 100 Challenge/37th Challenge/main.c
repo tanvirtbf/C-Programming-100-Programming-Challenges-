@@ -1,19 +1,14 @@
 #include <stdio.h>
-// Create a program to verify if a user put a positive number
+// Create a program using continue to print only even numbers using continue for odd numbers
 
 int main(){
-    int x = 0;
+    int num, sum = 0;
     do{
-        int num ;
-        x==0? printf("Enter a Number : \n"): printf("Please Enter a Positive Number : \n");
+        printf("Enter a Number : ");
         scanf("%d",&num);
-        if(num<0){
-            x = 1;
-        }else{
-            printf("Thanks for putting a Positive Number \n");
-            return 0;
-        }
-    }while(x==1);
-
+        if(num%2!=0) continue;
+        sum = sum + num;
+    }while(num!=0);
+    printf("%d", sum);
     return 0;
 }
