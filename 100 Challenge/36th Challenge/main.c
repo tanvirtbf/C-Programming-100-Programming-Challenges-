@@ -6,13 +6,10 @@ int main(){
     do{
         printf("Enter a Number : ");
         scanf("%d",&num);
-        if(num>0){
-            sum = sum + num;
-        }else if(num>0){
-            continue;
-        }else{
-            break;
-        }
+        if(num<0) continue;
+        sum += num;
     }
-    while(sum);
+    while(num!=0);
+    printf("%d",sum);
+    return 0;
 }
