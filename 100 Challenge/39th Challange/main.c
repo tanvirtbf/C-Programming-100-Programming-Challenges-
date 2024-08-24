@@ -7,8 +7,7 @@ int main(){
     int first, second, third, fourth;
     printf("Enter 4 Number for add : \n");
     scanf("%d%d%d%d",&first,&second,&third,&fourth);
-    int result = addInt(first,second,third,fourth);
-    printf("%d",result);
+    printf("%d",addInt(first,second,third,fourth));
     return 0;
 }
 
