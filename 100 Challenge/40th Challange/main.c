@@ -1,14 +1,17 @@
 #include <stdio.h>
-// write a function named greet that prints "Hello, World!" when called
+// Define a function square that takes an int and returns its square
 
-void greet(); // function prototype
+int square(int); // function prototype
 
 int main(){
-    greet(); // function call
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    printf("%d",square(num));
     return 0;
 }
 
 // function definition
-void greet(){
-    printf("Hello, World!");
+int square(int a){
+    return a*a;
 }
