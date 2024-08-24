@@ -1,7 +1,7 @@
 #include <stdio.h>
 // write a function that adds that takes 4 int parameters and returns the sum.
 
-int addInt(int a, int b, int c, int d); // function prototype
+int addInt(int, int, int, int); // function prototype
 
 int main(){
     int first, second, third, fourth;
