@@ -3,6 +3,7 @@
 // for address : use & operator
 // for value : use * operator
 
+void swap(int*,int*);
 
 int main(){
     /*
@@ -32,7 +33,7 @@ int main(){
     printf("Value of i %d\n", *j);
     printf("Address of j %p\n", &j);
     
-    */
+    
     
     // pointer to a pointer
     // definition: A pointer to a pointer is a type of pointer that stores the address of another pointer, allowing indirect access to the value of thek variable the first pointer points to.
@@ -40,8 +41,54 @@ int main(){
     int var = 10;
     int *ptr1 = &var;
     int **ptr2 = &ptr1;
-    printf("Value of var is : %d", **ptr2);
+    printf("Value of var is : %d", **ptr2); // 10
+    
+    
+    
+    // Revision all thing..
+    int i = 3;
+    int *j;
+    j = &i;
+    int **k;
+    k = &j;
+    
+    // Address of i
+    printf("Address of i = %p\n",&i); // 000000000061FE14
+    printf("Address of i = %p\n",j);  // 000000000061FE14
+    printf("Address of i = %p\n",*k);  // 000000000061FE14
+    printf("Address of i = %p\n",*(&j)); // 000000000061FE14
+    printf("Address of i = %p\n\n\n",**(&k)); // 000000000061FE14
+
+    // Address of j
+    printf("Address of j = %p\n",&j);
+    printf("Address of j = %p\n",k);
+    printf("Address of j = %p\n\n\n",*(&k));
+    
+    // Address of k
+    printf("Address of k = %p\n\n\n",&k);
+
+    // Value of i
+    printf("Value of i = %d\n",i); // 3
+    printf("Value of i = %d\n",*j); // 3
+    printf("Value of i = %d\n",**(&j)); // 3
+    printf("Value of i = %d\n",***(&k)); // 3
+    printf("Value of i = %d\n",**k); // 3
+
+    */
+
+    // call by reference
+
+    // swap two number : using pointer and function 
+    
+    int x = 10, y = 20;
+    int *a = x;
+    int *b = y;
+    swap(a,b);
     
     
     return 0;
+}
+
+void swap(int* a,int* b){
+    printf("%p,%p", a,b);
 }

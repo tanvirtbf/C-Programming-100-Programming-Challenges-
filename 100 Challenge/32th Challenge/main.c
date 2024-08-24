@@ -16,9 +16,9 @@ int main(){
         }
     }
     if(firstDigit==lastDigit){
-        printf("%d is a Palindrom Number \n", num);
+        return 1;
     }else{
-        printf("%d is not a palindrom number \n", num);
+        return 0;
     }
     return 0;
 }
