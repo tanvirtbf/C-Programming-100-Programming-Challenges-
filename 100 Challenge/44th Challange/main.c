@@ -1,29 +1,21 @@
 #include <stdio.h>
-// create a function max that takes two float arguments and returns the larger value
+// C Program to Find Factorial of a Number Using Recursion
 
-float maxVal(float,float); // function prototype
+int fact(int); // function prototype
 
 int main(){
-    float x,y;
-    printf("Enter two float number :\n");
-    hello:
-    scanf("%f%f",&x,&y);
-    float result = maxVal(x,y); // function call
-    if(result==10.000000){
-        printf("Please do not input equal value\nEnter again: \n");
-        goto hello;
-    }
-    printf("%f is max value", result);
+    int num;
+    scanf("%d",&num);
+    int result = fact(num);
+    printf("%d",result);
     return 0;
 }
 
 // function definition
-float maxVal(float a, float b){
-    if(a>b){
-        return a;
-    }else if(a<b){
-        return b;
-    }else{
-        return 10;
+int fact(int n){
+    if(n!=1){
+        return n*fact(n-1);
+    }else {
+        return n;
     }
 }
