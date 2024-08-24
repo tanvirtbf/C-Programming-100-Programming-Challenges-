@@ -1,29 +1,29 @@
 #include <stdio.h>
-// create a function max that takes two float arguments and returns the larger value
+// C Program to Find G.C.D Using Recursion
 
-float maxVal(float,float); // function prototype
+int findGcd(int,int); // function prototype
 
 int main(){
-    float x,y;
+    int x,y;
     printf("Enter two float number :\n");
-    hello:
-    scanf("%f%f",&x,&y);
-    float result = maxVal(x,y); // function call
-    if(result==10.000000){
-        printf("Please do not input equal value\nEnter again: \n");
-        goto hello;
-    }
-    printf("%f is max value", result);
+    scanf("%d%d",&x,&y);
+    int result = findGcd(x,y);
+    printf("%d", result);
     return 0;
 }
 
 // function definition
-float maxVal(float a, float b){
-    if(a>b){
-        return a;
-    }else if(a<b){
-        return b;
-    }else{
-        return 10;
+int findGcd(int a, int b){
+    int min = a<b? a: b;
+    int x = min;
+    if(x!=0){
+        return 1l;
     }
+    
+    
+    /*for(int i = min; i>=1; i--){
+        if(a%i==0 && b%i==0){
+            return i;
+        }
+    }*/
 }
