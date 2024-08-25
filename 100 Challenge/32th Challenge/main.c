@@ -16,9 +16,9 @@ int main(){
         }
     }
     if(firstDigit==lastDigit){
-        return 1;
+        printf("True");
     }else{
-        return 0;
+        printf("False")
     }
     return 0;
 }
