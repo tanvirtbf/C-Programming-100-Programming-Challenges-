@@ -74,21 +74,27 @@ int main(){
     printf("Value of i = %d\n",***(&k)); // 3
     printf("Value of i = %d\n",**k); // 3
 
-    */
+    
 
     // call by reference
 
     // swap two number : using pointer and function 
     
-    int x = 10, y = 20;
-    int *a = x;
-    int *b = y;
-    swap(a,b);
+    int x = 4;
+    int y = 87;
+    printf("Value of x = %d , value of Y = %d\n", x, y);
+    swap(&x,&y);
+    printf("Value of x = %d , value of Y = %d\n", x, y);
     
     
     return 0;
+    
+    
+    */
 }
 
-void swap(int* a,int* b){
-    printf("%p,%p", a,b);
+void swap(int* ptr1,int* ptr2){
+    int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
 }
